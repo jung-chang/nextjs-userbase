@@ -35,7 +35,7 @@ const LogInForm = () => {
       const user = await userbase.signIn({
         username: email,
         password,
-        rememberMe: "none",
+        rememberMe: "local",
       });
       console.log({ user });
     } catch (error: any) {
